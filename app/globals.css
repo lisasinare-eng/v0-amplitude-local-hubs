@@ -1,0 +1,108 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Amplitude Brand Colors */
+:root {
+  /* Brand colors */
+  --amp-blue: #0052F2;
+  --amp-blue-light: #4083FF;
+  --amp-dark-blue: #001A4F;
+  --amp-lilac: #6980FF;
+  --amp-violet: #A373FF;
+  --amp-pink: #FF7D78;
+  --amp-red: #F23845;
+  
+  /* Grayscale */
+  --amp-black: #000000;
+  --amp-white: #FFFFFF;
+  --amp-gray-10: #F2F4F8;
+  --amp-gray-20: #D5D9E0;
+  --amp-gray-30: #B9BFC7;
+  --amp-gray-40: #9FA5AD;
+  --amp-gray-50: #868D95;
+  --amp-gray-60: #697077;
+  --amp-gray-70: #505658;
+  --amp-gray-80: #373D42;
+  --amp-gray-90: #262A2E;
+  --amp-gray-100: #13171A;
+  
+  /* Semantic tokens */
+  --background: var(--amp-black);
+  --foreground: var(--amp-white);
+  --card: var(--amp-gray-90);
+  --card-foreground: var(--amp-white);
+  --popover: var(--amp-gray-90);
+  --popover-foreground: var(--amp-white);
+  --primary: var(--amp-blue);
+  --primary-foreground: var(--amp-white);
+  --secondary: var(--amp-gray-80);
+  --secondary-foreground: var(--amp-white);
+  --muted: var(--amp-gray-80);
+  --muted-foreground: var(--amp-gray-50);
+  --accent: var(--amp-blue-light);
+  --accent-foreground: var(--amp-white);
+  --destructive: var(--amp-red);
+  --destructive-foreground: var(--amp-white);
+  --border: var(--amp-gray-80);
+  --input: var(--amp-gray-80);
+  --ring: var(--amp-blue);
+  --radius: 0.375rem;
+}
+
+/* Dark mode not needed - page is always dark-themed */
+
+@theme inline {
+  --font-sans: 'Poppins', 'Noto Sans', sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+  
+  /* Amplitude brand color tokens */
+  --color-amp-blue: var(--amp-blue);
+  --color-amp-blue-light: var(--amp-blue-light);
+  --color-amp-dark-blue: var(--amp-dark-blue);
+  --color-amp-lilac: var(--amp-lilac);
+  --color-amp-violet: var(--amp-violet);
+  --color-amp-gray-10: var(--amp-gray-10);
+  --color-amp-gray-20: var(--amp-gray-20);
+  --color-amp-gray-30: var(--amp-gray-30);
+  --color-amp-gray-40: var(--amp-gray-40);
+  --color-amp-gray-50: var(--amp-gray-50);
+  --color-amp-gray-60: var(--amp-gray-60);
+  --color-amp-gray-70: var(--amp-gray-70);
+  --color-amp-gray-80: var(--amp-gray-80);
+  --color-amp-gray-90: var(--amp-gray-90);
+  --color-amp-gray-100: var(--amp-gray-100);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
