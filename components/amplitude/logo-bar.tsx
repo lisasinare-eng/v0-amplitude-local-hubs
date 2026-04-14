@@ -3,8 +3,6 @@
 import { motion } from "framer-motion"
 import { useI18n } from "@/lib/i18n"
 
-const logos = ["Allegro", "mBank", "PKO BP", "InPost", "Empik", "Docplanner"]
-
 export function LogoBar() {
   const { t } = useI18n()
 
@@ -15,12 +13,13 @@ export function LogoBar() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       className="bg-amp-gray-10 py-10 px-6 lg:px-16"
+      dir={t.dir}
     >
       <div className="text-xs font-semibold uppercase tracking-[0.1em] text-amp-gray-60 text-center mb-7">
         {t.logoBar.label}
       </div>
       <div className="flex justify-center items-center gap-8 lg:gap-12 flex-wrap">
-        {logos.map((logo, i) => (
+        {t.logoBar.logos.map((logo, i) => (
           <motion.span
             key={logo}
             initial={{ opacity: 0, y: 10 }}
