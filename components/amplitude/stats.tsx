@@ -7,10 +7,10 @@ export function Stats() {
   const { t } = useI18n()
 
   const stats = [
-    { value: t.stats.gdpr, label: t.stats.gdprLabel },
-    { value: t.stats.retention, label: t.stats.retentionLabel },
-    { value: t.stats.customers, label: t.stats.customersLabel },
-    { value: t.stats.rank, label: t.stats.rankLabel },
+    { value: t.stats.s1, label: t.stats.s1Label },
+    { value: t.stats.s2, label: t.stats.s2Label },
+    { value: t.stats.s3, label: t.stats.s3Label },
+    { value: t.stats.s4, label: t.stats.s4Label },
   ]
 
   return (
@@ -18,7 +18,7 @@ export function Stats() {
       <div className="max-w-[1200px] mx-auto grid grid-cols-2 lg:grid-cols-4">
         {stats.map((stat, i) => (
           <motion.div
-            key={stat.value}
+            key={i}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
