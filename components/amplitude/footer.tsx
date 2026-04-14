@@ -21,7 +21,7 @@ export function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-amp-gray-100 py-10 px-6 lg:px-16 border-t border-amp-gray-80"
+      className="bg-amp-gray-100 py-10 px-6 lg:px-16 border-t border-amp-gray-90"
     >
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
         {/* Logo */}

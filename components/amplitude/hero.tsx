@@ -9,7 +9,7 @@ export function Hero() {
   const { t } = useI18n()
 
   return (
-    <section className="relative min-h-[520px] flex items-center pt-24 pb-12 px-6 lg:px-16 overflow-hidden bg-black">
+    <section className="relative flex items-center pt-28 pb-16 px-6 lg:px-16 overflow-hidden bg-black">
       {/* Background Glows */}
       <div className="absolute right-[-100px] top-[-80px] w-[700px] h-[700px] bg-[radial-gradient(ellipse_at_center,_rgba(0,82,242,0.15)_0%,_transparent_70%)] pointer-events-none" />
       <div className="absolute left-[-50px] bottom-[-100px] w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,_rgba(105,128,255,0.08)_0%,_transparent_70%)] pointer-events-none" />

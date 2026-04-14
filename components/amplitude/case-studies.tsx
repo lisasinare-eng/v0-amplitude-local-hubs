@@ -13,7 +13,7 @@ export function CaseStudies() {
   const { t } = useI18n()
 
   return (
-    <section className="bg-black py-14 px-6 lg:px-16">
+    <section className="bg-amp-gray-10 py-14 px-6 lg:px-16">
       <div className="max-w-[1200px] mx-auto">
         {/* Section Header */}
         <motion.div
@@ -22,13 +22,13 @@ export function CaseStudies() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-xs font-semibold tracking-[0.1em] uppercase text-amp-blue-light mb-3">
+          <div className="text-xs font-semibold tracking-[0.1em] uppercase text-amp-blue mb-3">
             {t.caseStudies.eyebrow}
           </div>
-          <h2 className="text-3xl lg:text-[40px] font-bold text-white leading-tight mb-4">
+          <h2 className="text-3xl lg:text-[40px] font-bold text-amp-gray-100 leading-tight mb-4">
             {t.caseStudies.title}
           </h2>
-          <p className="text-[17px] text-amp-gray-30 leading-relaxed max-w-[600px] mb-8">
+          <p className="text-[17px] text-amp-gray-60 leading-relaxed max-w-[600px] mb-8">
             {t.caseStudies.subtitle}
           </p>
         </motion.div>
@@ -43,7 +43,7 @@ export function CaseStudies() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -4 }}
-              className="bg-amp-gray-90 border border-amp-gray-80 rounded-xl overflow-hidden group cursor-pointer"
+              className="bg-white border border-amp-gray-20 rounded-xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-shadow"
             >
               {/* Card Header */}
               <div
@@ -56,13 +56,13 @@ export function CaseStudies() {
 
               {/* Card Body */}
               <div className="p-6">
-                <div className="text-4xl font-bold text-amp-blue-light leading-none mb-1.5">
+                <div className="text-4xl font-bold text-amp-blue leading-none mb-1.5">
                   {card.stat}
                 </div>
-                <div className="text-[13px] text-amp-gray-50 font-medium mb-4">
+                <div className="text-[13px] text-amp-gray-60 font-medium mb-4">
                   {card.statLabel}
                 </div>
-                <p className="text-sm text-amp-gray-30 leading-relaxed italic mb-4">
+                <p className="text-sm text-amp-gray-70 leading-relaxed italic mb-4">
                   &quot;{card.quote}&quot;
                 </p>
                 <div className="text-xs font-semibold text-amp-gray-50 uppercase tracking-[0.06em]">
