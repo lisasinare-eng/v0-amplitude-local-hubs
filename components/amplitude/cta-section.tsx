@@ -7,7 +7,7 @@ export function CTASection() {
   const { t } = useI18n()
 
   return (
-    <section className="bg-amp-blue py-20 px-6 lg:px-16 text-center">
+    <section className="bg-amp-blue py-14 px-6 lg:px-16 text-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

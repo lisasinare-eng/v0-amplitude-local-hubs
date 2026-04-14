@@ -13,7 +13,7 @@ export function CaseStudies() {
   const { t } = useI18n()
 
   return (
-    <section className="bg-black py-20 px-6 lg:px-16">
+    <section className="bg-black py-14 px-6 lg:px-16">
       <div className="max-w-[1200px] mx-auto">
         {/* Section Header */}
         <motion.div
@@ -28,7 +28,7 @@ export function CaseStudies() {
           <h2 className="text-3xl lg:text-[40px] font-bold text-white leading-tight mb-4">
             {t.caseStudies.title}
           </h2>
-          <p className="text-[17px] text-amp-gray-30 leading-relaxed max-w-[600px] mb-12">
+          <p className="text-[17px] text-amp-gray-30 leading-relaxed max-w-[600px] mb-8">
             {t.caseStudies.subtitle}
           </p>
         </motion.div>

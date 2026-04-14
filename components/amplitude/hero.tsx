@@ -9,7 +9,7 @@ export function Hero() {
   const { t } = useI18n()
 
   return (
-    <section className="relative min-h-[600px] flex items-center pt-32 pb-20 px-6 lg:px-16 overflow-hidden bg-black">
+    <section className="relative min-h-[520px] flex items-center pt-24 pb-12 px-6 lg:px-16 overflow-hidden bg-black">
       {/* Background Glows */}
       <div className="absolute right-[-100px] top-[-80px] w-[700px] h-[700px] bg-[radial-gradient(ellipse_at_center,_rgba(0,82,242,0.15)_0%,_transparent_70%)] pointer-events-none" />
       <div className="absolute left-[-50px] bottom-[-100px] w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,_rgba(105,128,255,0.08)_0%,_transparent_70%)] pointer-events-none" />
@@ -41,7 +41,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg text-amp-gray-30 leading-relaxed mb-10 max-w-[560px]"
+          className="text-lg text-amp-gray-30 leading-relaxed mb-8 max-w-[560px]"
         >
           {t.hero.subtitle}
         </motion.p>
@@ -72,7 +72,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-16 flex flex-col sm:flex-row sm:items-center gap-5"
+          className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4"
         >
           <span className="text-[13px] text-amp-gray-50 font-medium">
             {t.hero.proofLine}

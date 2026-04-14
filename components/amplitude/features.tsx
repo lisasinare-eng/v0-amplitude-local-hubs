@@ -10,7 +10,7 @@ export function Features() {
   const { t } = useI18n()
 
   return (
-    <section className="bg-amp-gray-10 py-20 px-6 lg:px-16">
+    <section className="bg-amp-gray-10 py-14 px-6 lg:px-16">
       <div className="max-w-[1200px] mx-auto">
         {/* Section Header */}
         <motion.div
@@ -25,7 +25,7 @@ export function Features() {
           <h2 className="text-3xl lg:text-[40px] font-bold text-black leading-tight mb-4">
             {t.features.title}
           </h2>
-          <p className="text-[17px] text-amp-gray-60 leading-relaxed max-w-[600px] mb-12">
+          <p className="text-[17px] text-amp-gray-60 leading-relaxed max-w-[600px] mb-8">
             {t.features.subtitle}
           </p>
         </motion.div>

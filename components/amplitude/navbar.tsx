@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useI18n, type Locale } from "@/lib/i18n"
+import { AmplitudeLogo } from "./amplitude-logo"
 
 export function Navbar() {
   const { locale, setLocale, t } = useI18n()
@@ -15,17 +16,7 @@ export function Navbar() {
     >
       <div className="flex items-center justify-between h-16 px-6 lg:px-16 max-w-[1400px] mx-auto">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <svg viewBox="0 0 32 32" className="w-8 h-8" fill="none">
-            <circle cx="16" cy="16" r="14" fill="#0052F2" />
-            <path
-              d="M16 8L22 20H10L16 8Z"
-              fill="white"
-            />
-            <circle cx="16" cy="22" r="2" fill="white" />
-          </svg>
-          <span className="text-white font-semibold text-lg tracking-tight">Amplitude</span>
-        </div>
+        <AmplitudeLogo className="h-7" />
 
         {/* Nav Links - Hidden on mobile */}
         <ul className="hidden lg:flex items-center gap-8">

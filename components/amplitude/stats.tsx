@@ -22,7 +22,7 @@ export function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: i * 0.1 }}
-          className="bg-black p-8 lg:p-10 text-center"
+          className="bg-black p-6 lg:p-8 text-center"
         >
           <div className="text-4xl lg:text-5xl font-bold text-amp-blue-light leading-none mb-2">
             {stat.value}
