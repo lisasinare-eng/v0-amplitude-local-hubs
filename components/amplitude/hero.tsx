@@ -3,13 +3,14 @@
 import { motion } from "framer-motion"
 import { useI18n } from "@/lib/i18n"
 
-const proofLogos = ["Allegro", "mBank", "OLX", "Booksy"]
-
 export function Hero() {
   const { t } = useI18n()
 
   return (
-    <section className="relative flex items-center pt-28 pb-16 px-6 lg:px-16 overflow-hidden bg-black">
+    <section
+      className="relative flex items-center pt-36 pb-16 px-6 lg:px-16 overflow-hidden bg-black"
+      dir={t.dir}
+    >
       {/* Background Glows */}
       <div className="absolute right-[-100px] top-[-80px] w-[700px] h-[700px] bg-[radial-gradient(ellipse_at_center,_rgba(0,82,242,0.15)_0%,_transparent_70%)] pointer-events-none" />
       <div className="absolute left-[-50px] bottom-[-100px] w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,_rgba(105,128,255,0.08)_0%,_transparent_70%)] pointer-events-none" />
@@ -53,13 +54,13 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-wrap gap-4"
         >
-          <a
+          
             href="#"
             className="px-7 py-3.5 bg-amp-blue text-white text-[15px] font-semibold rounded-md hover:bg-[#0044CC] transition-colors duration-200"
           >
             {t.hero.ctaPrimary}
           </a>
-          <a
+          
             href="#"
             className="px-7 py-3.5 text-white text-[15px] font-semibold border border-amp-gray-60 rounded-md hover:border-white transition-colors duration-200"
           >
@@ -74,11 +75,11 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4"
         >
-          <span className="text-[13px] text-amp-gray-50 font-medium">
+          <span className="text-[13px] text-amp-gray-50 font-medium whitespace-nowrap">
             {t.hero.proofLine}
           </span>
           <div className="flex flex-wrap gap-4">
-            {proofLogos.map((logo) => (
+            {t.hero.proofLogos.map((logo) => (
               <span
                 key={logo}
                 className="h-[22px] bg-amp-gray-70 rounded px-3 text-[11px] font-bold text-amp-gray-30 flex items-center uppercase tracking-[0.05em]"
