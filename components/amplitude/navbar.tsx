@@ -16,7 +16,7 @@ export function Navbar() {
         {regions.map((r)=>(<button key={r.id} onClick={()=>setRegion(r.id)} className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-semibold transition-all duration-200 ${region===r.id?"bg-amp-blue text-white":"text-amp-gray-50 hover:text-amp-gray-100 hover:bg-amp-gray-10"}`}><span>{r.flag}</span><span>{r.label}</span></button>))}
       </div>
       <div className="flex items-center justify-between h-16 px-6 lg:px-16 max-w-[1400px] mx-auto">
-        <AmplitudeLogo className="h-7" />
+        <AmplitudeLogo className="h-7" variant="dark" />
         <ul className="hidden lg:flex items-center gap-8">
           {[t.nav.products,t.nav.solutions,t.nav.customers,t.nav.analytics,t.nav.pricing].map((item)=>(<li key={item}><a href="#" className="text-amp-gray-70 text-sm font-medium hover:text-amp-gray-100 transition-colors duration-200">{item}</a></li>))}
         </ul>
