@@ -18,7 +18,7 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-black backdrop-blur-xl border-b border-amp-gray-80"
+      className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-xl border-b border-amp-gray-20"
       dir="ltr"
     >
       <div className="border-b border-amp-gray-90 px-6 lg:px-16 max-w-[1400px] mx-auto flex items-center gap-2 h-9">
@@ -41,7 +41,7 @@ export function Navbar() {
         <ul className="hidden lg:flex items-center gap-8">
           {[t.nav.products, t.nav.solutions, t.nav.customers, t.nav.analytics, t.nav.pricing].map((item) => (
             <li key={item}>
-              <a href="#" className="text-amp-gray-30 text-sm font-medium hover:text-white transition-colors duration-200">{item}</a>
+              <a href="#" className="text-amp-gray-70 text-sm font-medium hover:text-amp-gray-100 transition-colors duration-200">{item}</a>
             </li>
           ))}
         </ul>
