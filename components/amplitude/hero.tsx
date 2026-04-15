@@ -12,8 +12,8 @@ export function Hero() {
         <motion.h1 initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{duration:0.6,delay:0.1}} className="text-4xl sm:text-5xl lg:text-[56px] font-bold leading-[1.1] text-amp-gray-100 mb-6">{t.hero.title} <span className="text-amp-blue">{t.hero.titleHighlight}</span></motion.h1>
         <motion.p initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{duration:0.6,delay:0.2}} className="text-lg text-amp-gray-60 leading-relaxed mb-8 max-w-[560px]">{t.hero.subtitle}</motion.p>
         <motion.div initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{duration:0.6,delay:0.3}} className="flex flex-wrap gap-4">
-          <a href="#" className="px-7 py-3.5 bg-amp-blue text-white text-[15px] font-semibold rounded-md hover:bg-[#0044CC] transition-colors duration-200">{t.hero.ctaPrimary}</a>
-          <a href="#" className="px-7 py-3.5 text-amp-gray-80 text-[15px] font-semibold border border-amp-gray-30 rounded-md hover:border-amp-gray-60 transition-colors duration-200">{t.hero.ctaSecondary}</a>
+          <a href="https://amplitude.com/get-started" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 bg-amp-blue text-white text-[15px] font-semibold rounded-md hover:bg-[#0044CC] transition-colors duration-200">{t.hero.ctaPrimary}</a>
+          <a href="https://amplitude.com/demo" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 text-amp-gray-80 text-[15px] font-semibold border border-amp-gray-30 rounded-md hover:border-amp-gray-60 transition-colors duration-200">{t.hero.ctaSecondary}</a>
         </motion.div>
         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8,delay:0.5}} className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4">
           <span className="text-[13px] text-amp-gray-50 font-medium whitespace-nowrap">{t.hero.proofLine}</span>
