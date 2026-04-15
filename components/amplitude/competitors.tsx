@@ -10,7 +10,7 @@ export function Competitors() {
           <h3 className="text-2xl lg:text-[28px] font-bold text-amp-gray-100 mb-2.5">{t.competitors.title}</h3>
           <p className="text-[15px] text-amp-gray-60 leading-relaxed">{t.competitors.description}</p>
         </div>
-        <a href="#" className="flex-shrink-0 px-8 py-3.5 bg-amp-blue text-white text-[15px] font-semibold rounded-md hover:bg-[#0044CC] transition-colors duration-200">{t.competitors.cta}</a>
+        <a href="https://amplitude.com/vs" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 px-8 py-3.5 bg-amp-blue text-white text-[15px] font-semibold rounded-md hover:bg-[#0044CC] transition-colors duration-200">{t.competitors.cta}</a>
       </div>
     </motion.div>
   )
