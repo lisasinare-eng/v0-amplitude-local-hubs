@@ -14,10 +14,12 @@ import { Events } from "@/components/amplitude/events"
 import { CTASection } from "@/components/amplitude/cta-section"
 import { Footer } from "@/components/amplitude/footer"
 import { RegistrationModal } from "@/components/amplitude/registration-modal"
+import { useI18n } from "@/lib/i18n"
 
 function AmplitudePage() {
   const [modalOpen, setModalOpen] = useState(false)
   const [selectedEvent, setSelectedEvent] = useState("")
+  const { t } = useI18n()
 
   const handleRegisterClick = (eventName: string) => {
     setSelectedEvent(eventName)
@@ -25,19 +27,18 @@ function AmplitudePage() {
   }
 
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-black" dir={t.dir}>
       <Navbar />
       <Hero />
       <LogoBar />
       <Stats />
-      <GDPRCallout />
+      {t.gdprCallout && <GDPRCallout />}
       <CaseStudies />
       <Competitors />
       <Features />
       <Events onRegisterClick={handleRegisterClick} />
       <CTASection />
       <Footer />
-
       <RegistrationModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
