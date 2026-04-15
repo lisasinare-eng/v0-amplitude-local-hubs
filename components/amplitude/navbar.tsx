@@ -5,9 +5,9 @@ import { useI18n, type Locale, type Region } from "@/lib/i18n"
 import { AmplitudeLogo } from "./amplitude-logo"
 
 const regions: { id: Region; flag: string; label: string }[] = [
-  { id: "pl", flag: "🇵🇱", label: "Poland" },
-  { id: "ru", flag: "🇷🇺", label: "Russia" },
-  { id: "ar", flag: "🇸🇦", label: "Arabia" },
+  { id: "pl", flag: "🇵🇱", label: "CEE / PL" },
+  { id: "ru", flag: "🇷🇺", label: "CIS / RU" },
+  { id: "ar", flag: "🇸🇦", label: "MEA / AR" },
 ]
 
 export function Navbar() {
